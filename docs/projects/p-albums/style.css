@@ -1,0 +1,187 @@
+/* ----------------------------------------------------------
+   GLOBAL COLORS + FONTS (from index)
+---------------------------------------------------------- */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+
+  background: #0b0b12; /* index background */
+  color: #cba6f7;      /* index text color */
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+}
+
+/* Headings */
+h1 {
+  color: #cba6f7;
+}
+
+p, h6 {
+  color: #cba6f7;
+}
+
+/* ----------------------------------------------------------
+   TOP BAR (from index)
+---------------------------------------------------------- */
+
+#quick-bar {
+  margin-bottom: 15px;
+}
+
+#quick-bar span {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #89b4fa; /* blue accent */
+}
+
+#quick-bar span:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------
+   ALBUM PAGE STRUCTURE (your existing layout)
+---------------------------------------------------------- */
+
+.site-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* DETAILS / SUMMARY */
+details {
+  background: #14002b;
+  border: 1px solid #a855f7;
+  padding: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #cba6f7; /* unify with index text color */
+}
+
+/* ALBUM INNER SUMMARY */
+.album-inner summary.tagline {
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  font-family: "JetBrains Mono", monospace;
+  color: #cba6f7;
+}
+
+/* ----------------------------------------------------------
+   FLEX LAYOUT FOR ALBUM ART + RIGHT COLUMN
+---------------------------------------------------------- */
+
+.inner-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* Album art */
+.cover {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #a855f7;
+}
+
+/* Right column */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Bio text */
+.bio {
+  font-size: 16px;
+  opacity: 0.8;
+  max-width: 500px;
+  color: #cba6f7;
+}
+
+/* Tracklist */
+.tracks p {
+  margin: 6px 0;
+  font-size: 18px;
+  opacity: 0.85;
+  color: #cba6f7;
+}
+
+/* ----------------------------------------------------------
+   DOWNLOAD BUTTON
+---------------------------------------------------------- */
+
+.download {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #a855f7;
+  color: #cba6f7;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.download:hover {
+  background: #a855f7;
+  color: black;
+}
+
+/* ----------------------------------------------------------
+   COVER SWITCHER
+---------------------------------------------------------- */
+
+.cover-switcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover-btn {
+  background: #120028;
+  border: 1px solid #a855f7;
+  color: #cba6f7;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.cover-btn:hover {
+  background: #a855f7;
+  color: black;
+}
+
+.cover-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-counter {
+  color: #cba6f7;
+}
+
+/* ----------------------------------------------------------
+   ALIAS DESCRIPTION
+---------------------------------------------------------- */
+
+.alias-description p {
+  color: #cba6f7;
+  margin: 10px 0 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
