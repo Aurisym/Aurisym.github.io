@@ -14,7 +14,7 @@ function handleCommand(value) {
     return
   }
 
-  print(`'${value}' is not recognized as an internal or external command.`)
+  print(`'${value}' is not recognized as an internal or external command,\noperable program or batch file.`)
 }
 
 input.addEventListener("keydown", function(e) {
@@ -23,14 +23,8 @@ input.addEventListener("keydown", function(e) {
 
     if (!value) return
 
-    // Print command
-    print(`C:\\Users\\Aurisym>${value}`)
-
+    print(`C:\\Users\\Aurisym> ${value}`)
     handleCommand(value)
-
-    // Print new prompt
-    print(`C:\\Users\\Aurisym>`)
-
     input.value = ""
   }
 })
