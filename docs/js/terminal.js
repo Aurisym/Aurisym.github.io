@@ -23,8 +23,14 @@ input.addEventListener("keydown", function(e) {
 
     if (!value) return
 
-    print(`C:\\Users\\Aurisym> ${value}`)
+    // Print command
+    print(`C:\\Users\\Aurisym>${value}`)
+
     handleCommand(value)
+
+    // Print new prompt
+    print(`C:\\Users\\Aurisym>`)
+
     input.value = ""
   }
 })
