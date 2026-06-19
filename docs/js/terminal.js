@@ -40,3 +40,16 @@ input.addEventListener("keydown", (e) => {
   // Clear input
   input.value = "";
 });
+
+function handleCommand(value) {
+    const command = value.toLowerCase().trim();
+
+    if (terminalCommands[command]) {
+        terminalCommands[command]();
+        return;
+    }
+
+    print(
+        `'${value}' is not recognized as an internal or external command,\noperable program or batch file.\n`
+    );
+}

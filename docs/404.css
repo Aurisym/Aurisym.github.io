@@ -1,3 +1,28 @@
-body {background-color: royalblue;}
-h1   {color: lightgray;}
-p    {color: lightgray;}
+body {
+  background-color: royalblue;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: lightgray;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.face {
+  font-size: 105px;
+  margin: 0;
+}
+
+.big-text {
+  font-size: 27px;
+}
+
+.code {
+  font-size: 21px;
+}
+
+.small-text {
+  font-size: 15px;
+}
