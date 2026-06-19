@@ -4,5 +4,6 @@ A renewed version of antlerego.neocities.org, powered by Deploy2Neocities and Gi
 # Official domains
 These are the only official places to visit the site.
 
+Main Domain - https://aurisym.xyz
 GitHub Pages - https://aurisym.github.io
 NeoCities - https://aurisym.neocities.org
