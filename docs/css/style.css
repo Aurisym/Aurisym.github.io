@@ -53,18 +53,19 @@ body {
 }
 
 #terminal-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* allows scrolling but doesn’t force full height */
+  padding: 20px;
 }
 
 #terminal-output {
-  flex-grow: 1;
-  overflow-y: auto;
   white-space: pre-wrap;
   font-family: "IBM Plex Mono", monospace;
   color: #cba6f7;
-  margin-top: 10px; /* small gap below quick bar */
+  margin-top: 10px;
+}
+
+#quick-bar {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #input-line {

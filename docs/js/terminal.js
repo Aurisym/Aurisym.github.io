@@ -8,9 +8,8 @@
 const output = document.getElementById("terminal-output");
 const input = document.getElementById("command-input");
 
-function print(text) {
+function print(text = "") {
   output.textContent += text + "\n";
-  output.scrollTop = output.scrollHeight;
 }
 
 function handleCommand(value) {
@@ -21,17 +20,23 @@ function handleCommand(value) {
     return;
   }
 
-  print(`'${value}' is not recognized as an internal or external command,\noperable program or batch file.`);
+  print(
+    `'${value}' is not recognized as an internal or external command,\noperable program or batch file.`
+  );
 }
 
-input.addEventListener("keydown", function (e) {
-  if (e.key === "Enter") {
-    const value = input.value.trim();
-    if (!value) return;
+input.addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
 
-    print(`C:\\Users\\Aurisym>${value}`);
-    handleCommand(value);
-    print(`C:\\Users\\Aurisym>`); // reprint prompt
-    input.value = "";
-  }
+  const value = input.value.trim();
+  if (!value) return;
+
+  // Record the command in terminal history
+  print(`C:\\Users\\Aurisym>${value}`);
+
+  // Run command
+  handleCommand(value);
+
+  // Clear input
+  input.value = "";
 });
