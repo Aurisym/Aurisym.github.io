@@ -55,7 +55,7 @@ body {
 #terminal-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh; /* allows scrolling but doesn’t force full height */
 }
 
 #terminal-output {
@@ -64,9 +64,11 @@ body {
   white-space: pre-wrap;
   font-family: "IBM Plex Mono", monospace;
   color: #cba6f7;
+  margin-top: 10px; /* small gap below quick bar */
 }
 
 #input-line {
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }

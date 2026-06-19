@@ -21,7 +21,6 @@ function handleCommand(value) {
     return;
   }
 
-  // Authentic CMD error message
   print(`'${value}' is not recognized as an internal or external command,\noperable program or batch file.`);
 }
 
@@ -30,16 +29,9 @@ input.addEventListener("keydown", function (e) {
     const value = input.value.trim();
     if (!value) return;
 
-    // Print the command line
     print(`C:\\Users\\Aurisym>${value}`);
-
-    // Handle the command
     handleCommand(value);
-
-    // Reprint the prompt after each command
-    print(`C:\\Users\\Aurisym>`);
-
-    // Clear input
+    print(`C:\\Users\\Aurisym>`); // reprint prompt
     input.value = "";
   }
 });
