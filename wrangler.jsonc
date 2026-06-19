@@ -1,7 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "aurisym-xyz",
-  "main": "src/index.ts",          // add this if your worker has a main entry
   "compatibility_date": "2026-05-03",
 
   "observability": {
@@ -10,7 +9,7 @@
 
   "assets": {
     "directory": "docs",
-    "not_found_handling": "404-page"   // this is the part you wanted
+    "not_found_handling": "404-page"
   },
 
   "compatibility_flags": [
