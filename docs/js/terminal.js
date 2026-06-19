@@ -1,3 +1,10 @@
+// why snoop when you can help make it better instead?
+// if you're a friend and know how to exactly fix my issues please be my guest,
+// i'm basically vibecoding it all
+// TODO:
+// - fix spacing to look like actual cmd 
+// - fix "C:\Users\Aurisym>" being halfway down the fucking screen
+
 const output = document.getElementById("terminal-output")
 const input = document.getElementById("command-input")
 
