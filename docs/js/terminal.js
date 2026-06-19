@@ -21,7 +21,7 @@ function handleCommand(value) {
   }
 
   print(
-    `'${value}' is not recognized as an internal or external command,\noperable program or batch file.`
+    `'${value}' is not recognized as an internal or external command,\noperable program or batch file.\n`
   );
 }
 
