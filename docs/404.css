@@ -5,14 +5,14 @@ body {
   margin: 0;
 }
 
-.container {
-  text-align: center;
-  padding-top: 10vh;
-}
-
 .face {
   font-size: 105px;
-  margin: 0;
+  margin: 20px;
+  text-align: left;
+}
+
+.container {
+  padding: 40px;
 }
 
 .big-text {
